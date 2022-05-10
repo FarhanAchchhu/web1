@@ -17,15 +17,15 @@ class ContactUs extends Component{
                 nav_to: ""
             },
 
-            {
-                img_path: img_pinterest,
-                nav_to: ""
-            },
+            // {
+            //     img_path: img_pinterest,
+            //     nav_to: ""
+            // },s
 
-            {
-                img_path: img_insta,
-                nav_to: ""
-            },
+            // {
+            //     img_path: img_insta,
+            //     nav_to: ""
+            // },
         ]
 
         var contact_us_section = contact_us_list.map((contact, index)=>{

@@ -13,18 +13,14 @@ import { useNavigate } from "react-router-dom";
 function TopBarSection(){
 
 
-    let navigate = useNavigate;
-    const home = () => {
-      let path = `/home`;
-      navigate(path);
-    };
+    
 
     var nav_bar_list = [
-        // {
-        //     navigate_to: "/home",
-        //     nav_name: "Home", 
-        //     dropDownEle: ""
-        // },   
+        {
+            navigate_to: "/home",
+            nav_name: "Home", 
+            dropDownEle: ""
+        },   
 
         {
             navigate_to: "/about-us/our-team",
@@ -72,7 +68,7 @@ function TopBarSection(){
     var nav_section = nav_bar_list.map((nav, index)=>{
         return(
             <a href={nav.navigate_to} key={index} className="p-1 border-b-2 hover:border-opacity-100 duration-300 border-opacity-0  select-none border-cyan-600 md:px-4">
-                <p className="md:text-base md:font-base md:text-gray-600 select-none text-xl font-semibold text-white">{
+                <p className="md:text-base md:font-base md:text-gray-600 select-none text-xl font-bold text-white">{
                 nav.nav_name}</p>
 
                 <div className="">
@@ -214,30 +210,30 @@ function TopBarSection(){
 
     return(
 
-        <div className="z-50">
+        <div className="z-50" >
             
             {/* after md */}
-            <div className="md:flex hidden mx-auto  items-center px-16 bg-white p-3 space-x-24 w-full z-50">
+            <div className="md:flex hidden mx-auto justify-between items-center px-16 bg-white p-3 space-x-24 w-full z-50">
                 <div className="flex space-x-3">
-                    <img alt="website_logo" src={website_logo} className="w-15 h-12" />
+                  <a href="/home">  <img  alt="website_logo" src={website_logo} className="w-15 h-10" /> </a>
                     {/* <img alt="website_name" src={website_name} className="w-20 h-10 m-5" /> */}
-                    <p className="text-xl text-gray-700 font-semibold my-auto">U-Smart.ai</p>
+                    <a className="text-xl text-gray-700 font-bold my-auto" href="/home" >U-Smart.ai</a>
                 </div>
                 
                 <div className="flex mt-1">
                     {/* home nav option */}
-                    <div  className="p-1 cursor-pointer border-b-2 relative hover:border-opacity-100 duration-300 border-opacity-0 border-cyan-600 px-4">
-                        <p onClick={home} className="text-md font-medium text-gray-600  select-none">Home</p>
+                    {/* <div  className="p-1 cursor-pointer border-b-2 relative hover:border-opacity-100 duration-300 border-opacity-0 border-cyan-600 px-4"> */}
+                        {/* <p className="text-md font-medium text-gray-600  select-none">Home</p> */}
                         {/* home dropdown */}
-                        <button id="home_dropdown" className={` space-x-10 ${home_dropdown_display} top-8 left-0 transition-all duration-300 absolute shadow-lg rounded-md bg-white xl:w-110 p-3 outline-none focus:outline-none`}> 
-                            {/* {home_nav_dropdown_section} */}
+                        {/* <button id="home_dropdown" className={` space-x-10 ${home_dropdown_display} top-8 left-0 transition-all duration-300 absolute shadow-lg rounded-md bg-white xl:w-110 p-3 outline-none focus:outline-none`}> 
+                            {home_nav_dropdown_section}
 
                             <div className="hidden xl:block">
-                                {/* <p className="uppercase text-md font-semibold text-gray-700 text-left -mt-1">Landing Page</p> */}
+                                <p className="uppercase text-md font-semibold text-gray-700 text-left -mt-1">Landing Page</p>
                                 <img alt="landing_page" src={landing_page_bg}  className="w-64" />
                             </div>
-                        </button>
-                    </div>
+                        </button> */}
+                    {/* </div> */}
                     {/* others nav options */}
                     {nav_section}
                 </div>
@@ -257,7 +253,7 @@ function TopBarSection(){
                     </button>
                 </div> */}
                 <div>
-                <button className="flex text-sm p-1 left:0px px-5 bg-gradient-to-r w-full md:w-auto text-center from-purple-400 rounded-full text-white to-cyan-600 font-semibold">Apply Now</button>
+                <button className="flex text-sm p-1 left:0px px-5 bg-gradient-to-r w-full md:w-auto text-center from-purple-400 rounded-full text-white to-cyan-600 justify-end font-bold">Apply Now</button>
                 </div>
             </div>
 

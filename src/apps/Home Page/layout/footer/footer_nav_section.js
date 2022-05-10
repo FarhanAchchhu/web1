@@ -13,7 +13,7 @@ class FooterNavSection extends Component{
         //                 nav_to: "",
         //             },
 
-        //             {
+        //             { 
         //                 nav_name: "Model Gallery",
         //                 nav_to: "",
         //             },
@@ -100,12 +100,12 @@ class FooterNavSection extends Component{
                 cat_list: [
                     {
                         nav_name: "Home",
-                        nav_to: "",
+                        nav_to: "/home",
                     },
 
                     {
                         nav_name: "About Us",
-                        nav_to: "",
+                        nav_to: "/about-us/our-team",
                     },
 
                     {
@@ -143,11 +143,13 @@ class FooterNavSection extends Component{
 
         return(
             <>
-            <div className="flex">
+            <div className="flex justify-between " >
                 {nav_section}
                 
-                <div className=" space-y-3 mt-3 justify-end item-end content-end">
-                                    <p className="text-xl font-semibold text-white ">Contact Us</p>
+                <div className=" space-y-3 mt-3 mr-4" >
+                                                    
+                                    <p className="text-xl font-semibold  text-white ">Contact Us</p>
+                                    
                                     <p className="text-gray-400">contact@u-smart.ai</p>
                                 </div>
                 </div>

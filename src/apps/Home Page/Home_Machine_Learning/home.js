@@ -141,14 +141,22 @@ import how_nlp_works from "../../../assets/images/how_nlp_works.png"
                 
                 {/* our skills */}
                 <div className="md:flex md:space-x-8 md:pt-11">
+                    
+
                     <div className="flex items-center justify-center flex-grow-0 flex-shrink-0 md:w-1/2  md:rounded-tl-full">
                         {/* <img alt="our_skills_img" src={ml_skills} className="pt-32 md:w-96" /> */}
+
+                        
                         <img alt="how_nlp_works" src={how_nlp_works} className="pt-32 md:w-100" />
+                        {/* <img alt="ml_banner_bg_svg_1" src={ml_banner_bg_svg_2} className="w-11/12 " /> */}
+
 
                     </div>
 
                     <div className="flex-grow-0 flex-shrink md:w-1/2 md:p-16 md:pt-32 space-y-8 p-5">
+
                         <p className="text-4xl text-blue-900">Our Skills</p>
+
 
                         <p className="text-base text-gray-500">We have pored over customer's input. We have fleshed out your idea – and it’s taking real form! We know it satisfied a real need in your market, and we have decided We can build it. So what’s next?</p>
 
