@@ -1,0 +1,42 @@
+.job-post-application {
+    cursor: pointer;
+    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+        rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.job-post-application .name {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+.job-post-application .email {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+
+.job-post-application .actions {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 750px) {
+    .job-post-application {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .job-post-application .name {
+        margin-bottom: 0.5rem;
+    }
+}

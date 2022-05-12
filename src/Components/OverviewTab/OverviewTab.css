@@ -1,0 +1,13 @@
+.overview-tab {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.overview-tab tr td {
+    padding: 1rem;
+    border: 2px solid rgb(229, 231, 235);
+}
+
+.overview-tab tr td:first-child {
+    width: 33.333%;
+}

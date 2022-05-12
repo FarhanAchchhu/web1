@@ -1,0 +1,76 @@
+.application-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.application-details .application-details-content {
+    max-width: 920px;
+    width: 100%;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    background: #fff;
+}
+
+.application-details .application-details-content .close {
+    text-align: right;
+    font-size: 1.125rem;
+    color: rgb(93, 103, 206);
+    font-weight: bold;
+}
+
+.application-details .application-details-content .close svg {
+    cursor: pointer;
+}
+
+.application-details .application-details-content .name-star-rating {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(209, 213, 219);
+    padding: 1rem 0px;
+}
+
+.application-details .application-details-content .name-star-rating .name {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+.application-details .application-details-content .tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-left: 0.75rem;
+    margin-top: 1rem;
+}
+
+.application-details .application-details-content .tabs .tab {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+
+.application-details .application-details-content .tabs .tab:hover {
+    color: rgb(93, 103, 206);
+    border-bottom: 2px solid rgb(93, 103, 206);
+    font-weight: 700;
+}
+
+.application-details .application-details-content .tabs .active-tab {
+    color: rgb(93, 103, 206);
+    border-bottom: 2px solid rgb(93, 103, 206);
+    font-weight: 700;
+}
