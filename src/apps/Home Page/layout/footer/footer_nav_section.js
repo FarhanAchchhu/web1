@@ -98,17 +98,17 @@ class FooterNavSection extends Component {
                 cat_list: [
                     {
                         nav_name: "Home",
-                        nav_to: "",
+                        nav_to: "/",
                     },
 
                     {
                         nav_name: "About Us",
-                        nav_to: "",
+                        nav_to: "/about-us/our-team",
                     },
 
                     {
                         nav_name: "Careers",
-                        nav_to: "",
+                        nav_to: "/careers",
                     },
 
                     // {

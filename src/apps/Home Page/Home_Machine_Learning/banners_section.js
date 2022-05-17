@@ -16,7 +16,7 @@ class BannersSection extends Component {
                         </p>
                         <p className="text-md text-gray-700">
                             We create everything that your enterprise needs from
-                            training data to working <br /> with unstructured
+                            training data to working <br /> with unstructured   
                             text, images and videos for machine learning. <br />
                             <br />
                             U-SMART.AI is a data driven consulting and product

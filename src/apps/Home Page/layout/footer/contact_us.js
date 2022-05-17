@@ -8,17 +8,17 @@ class ContactUs extends Component {
         var contact_us_list = [
             {
                 img_path: img_facebook,
-                nav_to: "",
+                nav_to: "https://www.facebook.com/U-Smartai",
             },
 
             {
                 img_path: img_twitter,
-                nav_to: "",
+                nav_to: "https://twitter.com/USmartAI1",
             },
 
             {
                 img_path: img_linkedin,
-                nav_to: "",
+                nav_to: "https://www.linkedin.com/company/u-smart-ai",
             },
         ];
 

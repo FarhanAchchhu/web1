@@ -307,3 +307,15 @@ a {
 .end .button {
     display: inline-block;
 }
+
+img.flip{
+    transform: rotatey(0);
+}
+ img.flip:hover{
+    animation:flip 1.5s ease-in-out forwards;
+    
+}
+
+@keyframes flip{
+    50%{transform: rotatey(180deg);}
+}  

@@ -32,21 +32,22 @@ const Careers = () => {
             <TopBarSection />
             <div className="careers">
                 <div className="content relative flex">
-                    <div class="absolute right-0">
+                    <div class="absolute right-0" style={{zIndex:-1}}>
                         <img
                             alt="ml_banner_bg_svg_1"
                             src={ml_banner_bg_svg_2}
                         />
                     </div>
-                    <div className="heading-desc " style={{ flex: 1 }}>
-                        <div className="heading">Careers at U-SMART</div>
-                        <div className="desc">
+                    <div className="heading-desc p-20" style={{ flex: 1 }}>
+                        <div className="heading text-left text-4xl font-semibold text-blue-900">Careers at U-SMART</div>
+                        <p className="desc text-left mx-3 text-black">
+
                             We offer like minded professionals the opportunity
                             to develop & enhance their careers and often move
                             ahead more rapidly than other companies. Ongoing
                             training & mentoring provide exciting & personally
                             satisfying careers.
-                        </div>
+                        </p>
                     </div>
                     <div style={{ flex: 1 }}>
                         <img src={careers} alt="Careers at U-SMART" />
