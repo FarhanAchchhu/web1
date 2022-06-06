@@ -55,7 +55,7 @@ class FooterSection extends Component {
                         </div>
                     </div>
                     <div className="text-center text-white mb-5">
-                        &copy; U-Smart.ai. All rights reserved.
+                        &copy; U-Smart.ai All rights reserved.
                     </div>
                 </div>
             </div>

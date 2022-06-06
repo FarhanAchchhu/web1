@@ -17,6 +17,8 @@ import AllBlogs from "./Blogs/All Blogs Page/all_blogs";
 import SingleBlog from "./Blogs/Single Blog Page/single_blog";
 import Careers from "../apps/Careers/Careers.jsx";
 import ViewJobPost from "../apps/ViewJobPost/ViewJobPost.jsx";
+// import calender from "../assets/images/calender1.png"
+import Calender from "../Components/Calender";
 
 class App extends Component {
     render() {
@@ -24,6 +26,14 @@ class App extends Component {
         return (
             // <LayoutComponent>
             // </LayoutComponent>
+            
+            <>
+            <Calender/>
+            {/* <div className="calender">
+                <img src={calender}/>
+            
+            </div> */}
+           
             <Routes>
                 {/* <Route path="home/chatbot" element={<HomePageChatBot />} ></Route> */}
                 <Route path="/" element={<HomePageML />}></Route>
@@ -51,6 +61,7 @@ class App extends Component {
                 ></Route>
                 <Route path="/careers" element={<HomePageML />}></Route>
             </Routes>
+            </>
         );
     }
 }
