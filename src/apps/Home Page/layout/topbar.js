@@ -64,6 +64,11 @@ function TopBarSection() {
             nav_name: "Contact Us",
             dropDownEle: "",
         },
+        {
+            navigate_to: "/Community",
+            nav_name: "Community",
+            dropDownEle: "",
+        },
     ];
 
     var nav_section = nav_bar_list.map((nav, index) => {

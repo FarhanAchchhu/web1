@@ -5,403 +5,466 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 textarea {
-    resize: vertical;
+  resize: vertical;
 }
 
 input:focus,
 textarea:focus,
 select:focus {
-    outline: 0;
+  outline: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #000;
+  text-decoration: none;
+  color: #000;
 }
 
 .button {
-    cursor: pointer;
-    padding: 10px 20px;
-    color: #fff;
-    background: rgb(29, 78, 216);
-    text-align: center;
-    transition: 0.5s;
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  color: #fff;
+  background: rgb(29, 78, 216);
+  text-align: center;
+  transition: 0.5s;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
 }
 
 .button:hover {
-    background: rgb(30, 64, 175);
+  background: rgb(30, 64, 175);
 }
 
 .loading {
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .lds-ellipsis {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
 
 .lds-ellipsis div {
-    position: absolute;
-    top: 33px;
-    width: 13px;
-    height: 13px;
-    border-radius: 50%;
-    background: #fff;
-    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
 .lds-ellipsis div:nth-child(1) {
-    left: 8px;
-    animation: lds-ellipsis1 0.6s infinite;
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(2) {
-    left: 8px;
-    animation: lds-ellipsis2 0.6s infinite;
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(3) {
-    left: 32px;
-    animation: lds-ellipsis2 0.6s infinite;
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(4) {
-    left: 56px;
-    animation: lds-ellipsis3 0.6s infinite;
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
 }
 
 @keyframes lds-ellipsis1 {
-    0% {
-        transform: scale(0);
-    }
-    100% {
-        transform: scale(1);
-    }
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes lds-ellipsis3 {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
 }
 
 @keyframes lds-ellipsis2 {
-    0% {
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(24px, 0);
-    }
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(24px, 0);
+  }
 }
 
 .other-details {
-    font-size: 15px;
-    color: rgb(100, 116, 139);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  font-size: 15px;
+  color: rgb(100, 116, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
 .other-details .other-details-group {
-    color: rgb(100, 116, 139);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 6px;
+  color: rgb(100, 116, 139);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
 }
 
 .form {
-    margin: 45px 0px;
-    border: 1px solid #e5e7eb;
-    border-radius: 0.375rem;
+  margin: 45px 0px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
 }
 
 .input-group .input-heading {
-    font-size: 13px;
-    font-weight: 700;
-    line-height: 19.5px;
-    margin-bottom: 5px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 19.5px;
+  margin-bottom: 5px;
 }
 
 .input-group input,
 .input-group textarea,
 .input-group select {
-    width: 100%;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid rgb(212, 212, 216);
-    border-radius: 0.25rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid rgb(212, 212, 216);
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-group select {
-    padding: 0.6rem 0.75rem;
+  padding: 0.6rem 0.75rem;
 }
 
 .input-group input[type="file"] {
-    display: none;
+  display: none;
 }
 
 .input-group input:focus,
 .input-group textarea:focus,
 .input-group select:focus {
-    border: 1px solid rgb(147, 197, 253);
+  border: 1px solid rgb(147, 197, 253);
 }
 
 .input-group .file-input label {
-    display: block;
-    padding: 26px 0px;
-    border: 1px dashed rgb(229, 231, 235);
-    border-radius: 6px;
-    margin-top: 3px;
-    text-align: center;
-    color: #64748b;
+  display: block;
+  padding: 26px 0px;
+  border: 1px dashed rgb(229, 231, 235);
+  border-radius: 6px;
+  margin-top: 3px;
+  text-align: center;
+  color: #64748b;
 }
 
 .input-group .file-input label .icon {
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .input-group .file-input label .title {
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 19.5px;
-    margin-top: 5px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19.5px;
+  margin-top: 5px;
 }
 
 .input-group .file-input label .title span {
-    color: rgb(69, 62, 225);
+  color: rgb(69, 62, 225);
 }
 
 .apply-form .submit {
-    padding: 30px 0px;
-    background: rgb(249, 249, 249);
-    text-align: center;
+  padding: 30px 0px;
+  background: rgb(249, 249, 249);
+  text-align: center;
 }
 
 .apply-form .submit-button {
-    display: inline-block;
-    border-radius: 0.375rem;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 21.78px;
-    padding: 15px 0px;
-    width: 205px;
+  display: inline-block;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21.78px;
+  padding: 15px 0px;
+  width: 205px;
 }
 
 .input-group .input-num-text-groups {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .input-group .input-num-text {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .input-group .input-num-text .num {
-    padding: 0.5rem 0.75rem;
-    background: rgba(212, 212, 216, 0.685);
-    border-radius: 0.25rem 0rem 0rem 0.26rem;
-    border: 1px solid rgb(212, 212, 216);
+  padding: 0.5rem 0.75rem;
+  background: rgba(212, 212, 216, 0.685);
+  border-radius: 0.25rem 0rem 0rem 0.26rem;
+  border: 1px solid rgb(212, 212, 216);
 }
 
 .input-group .input-num-text .delete {
-    margin-left: 10px;
-    cursor: pointer;
-    color: red;
+  margin-left: 10px;
+  cursor: pointer;
+  color: red;
 }
 
 .input-group .input-num-text input {
-    border-radius: 0rem 0.25rem 0.25rem 0rem;
+  border-radius: 0rem 0.25rem 0.25rem 0rem;
 }
 
 .ring-loading {
-    text-align: center;
+  text-align: center;
 }
 
 .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 80px;
-    height: 80px;
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
 
 .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border: 8px solid #000;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #000 transparent transparent transparent;
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #000;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #000 transparent transparent transparent;
 }
 
 .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
+  animation-delay: -0.45s;
 }
 
 .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
+  animation-delay: -0.3s;
 }
 
 .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
+  animation-delay: -0.15s;
 }
 
 @keyframes lds-ring {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .end {
-    text-align: center;
+  text-align: center;
 }
 
 .end .end-logo {
-    font-size: 60px;
-    color: green;
+  font-size: 60px;
+  color: green;
 }
 
 .end .end-desc {
-    margin-top: 20px;
-    font-size: 25px;
+  margin-top: 20px;
+  font-size: 25px;
 }
 
 .end .button {
-    display: inline-block;
+  display: inline-block;
 }
 
-img.flip{
-    transform: rotatey(0);
+img.flip {
+  transform: rotatey(0);
 }
- img.flip:hover{
-    animation:flip 1.5s ease-in-out forwards;
-    
-}
-
-@keyframes flip{
-    50%{transform: rotatey(180deg);}
-}  
-
-.calender{
-    height: 40px;
-    width: 40px;
-    position: fixed;
-    right: 40px;
-    top: 10px;
-    background-color: #EAF8FE;
-    transition: .3s;
-    z-index: 99;
-    border-radius: 30px;
-    padding: 5px;
-    cursor: pointer;
+img.flip:hover {
+  animation: flip 1.5s ease-in-out forwards;
 }
 
-.calender:hover{
-    transform: scale(1.2);
-    background-color: rgb(15, 5, 76);
+@keyframes flip {
+  50% {
+    transform: rotatey(180deg);
+  }
 }
 
-.calender::before{
-    content: "Schedule a meeting";
-    position: absolute;
-    top:50%;
-    left: -130px;
-    transform: translateY(-50%);
-    width: 110px;   
-    display: none;
-    font-size: 12px;
-    background-color: #EAF8FE;
-    
-    border-radius: 5px;
-    color: rgb(15, 5, 76);
-    padding: 2px;
+.calender {
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  right: 40px;
+  top: 10px;
+  background-color: #eaf8fe;
+  transition: 0.3s;
+  z-index: 99;
+  border-radius: 30px;
+  padding: 5px;
+  cursor: pointer;
 }
 
-.calender:hover::before{
-    display: block;
+.calender:hover {
+  transform: scale(1.2);
+  background-color: rgb(15, 5, 76);
 }
 
-.modal{
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    width: 100%;
-    height: 90vh;
-    padding: 120px;
-    position: fixed;
-    overflow: hidden;
+.calender::before {
+  content: "Schedule a meeting";
+  position: absolute;
+  top: 50%;
+  left: -130px;
+  transform: translateY(-50%);
+  width: 110px;
+  display: none;
+  font-size: 12px;
+  background-color: #eaf8fe;
+
+  border-radius: 5px;
+  color: rgb(15, 5, 76);
+  padding: 2px;
 }
 
-.iframe{
-    width: 100%;
-    height: 75vh;
-
-    /* position: absolute; */
+.calender:hover::before {
+  display: block;
 }
 
-.model-container{
-    width: 100%;
+.modal {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 90vh;
+  padding: 120px;
+  position: fixed;
+  overflow: hidden;
 }
 
-.cross{
-    margin-right: 30px;
+.iframe {
+  width: 100%;
+  height: 75vh;
 
-    background-color:#0F0980;
-    /* background-size: 10px; */
-    color: white;
-    border-radius:50%;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    padding: 5px;
-    transition: .3s;
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 20px;
-  
+  /* position: absolute; */
 }
 
-.cross:hover{
-    transform: scale(1.2);
-    background-color: white;
-    color:#0F0980 ;
+.model-container {
+  width: 100%;
+}
+
+.cross {
+  margin-right: 30px;
+
+  background-color: #0f0980;
+  /* background-size: 10px; */
+  color: white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  transition: 0.3s;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  line-height: 20px;
+}
+
+.cross:hover {
+  transform: scale(1.2);
+  background-color: white;
+  color: #0f0980;
+}
+
+.lazy {
+  margin-right: -40px;
+  margin-top: -360px;
+}
+
+.bgbanner {
+  /* margin-top: -20px; */
+  top: -200px;
+}
+
+.info {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 50px;
+}
+
+.info div {
+  width: 600px;
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.secondcontent {
+  position: relative;
+  /* border: 1px solid; */
+  min-height: 100vh;
+  overflow: hidden;
+  /* background-color: #0f0980; */
+}
+
+.secondcontentbg {
+  /* position: relative; */
+}
+.secondcontentbg img {
+  /* position: absolute; */
+}
+
+.joindiv {
+  padding: 80px;
+  margin-top: 50px;
+}
+
+.joindiv ul {
+  list-style: disc;
+  font-size: larger;
+  padding: 20px;
+  font-weight: bold;
+}
+
+.joindiv ul li {
+  color: rgb(57, 57, 57);
+  padding-top: 20px;
+}
+
+.thirdsection {
+  min-height: 100vh;
+  /* position: relative; */
 }

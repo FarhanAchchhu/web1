@@ -19,51 +19,47 @@ import Careers from "../apps/Careers/Careers.jsx";
 import ViewJobPost from "../apps/ViewJobPost/ViewJobPost.jsx";
 // import calender from "../assets/images/calender1.png"
 import Calender from "../Components/Calender";
+import Community from "../Components/Community";
 
 class App extends Component {
-    render() {
-        console.log("");
-        return (
-            // <LayoutComponent>
-            // </LayoutComponent>
-            
-            <>
-            <Calender/>
-            {/* <div className="calender">
+  render() {
+    console.log("");
+    return (
+      // <LayoutComponent>
+      // </LayoutComponent>
+
+      <>
+        <Calender />
+        {/* <div className="calender">
                 <img src={calender}/>
             
             </div> */}
-           
-            <Routes>
-                {/* <Route path="home/chatbot" element={<HomePageChatBot />} ></Route> */}
-                <Route path="/" element={<HomePageML />}></Route>
-                {/* <Route path="home/natural-learning-process" element={<HomeNLP />} ></Route>
+
+        <Routes>
+          {/* <Route path="home/chatbot" element={<HomePageChatBot />} ></Route> */}
+          <Route path="/" element={<HomePageML />}></Route>
+          {/* <Route path="home/natural-learning-process" element={<HomeNLP />} ></Route>
                 <Route path="home/computer-vision" element={<HomePageComputerVersion />} ></Route>
                 <Route path="home/data-sciences" element={<HomePageDataScience />} ></Route>
                 <Route path="home/artificial-intelligence" element={<HomePageArtificialIntelligence />} ></Route>
                 <Route path="home/waste-management" element={<HomePageWasteManagement />} ></Route>
                 <Route path="home/health-care" element={<HomePageHealthcare />} ></Route> */}
-                <Route path="contact-us" element={<ContactUsPage />}></Route>
-                <Route path="/careers" element={<Careers />} />
-                <Route path="/view-job-post" element={<ViewJobPost />} />
-                <Route
-                    path="about-us/our-team"
-                    element={<OurTeamPage />}
-                ></Route>
-                <Route path="blogs" element={<AllBlogs />}></Route>
-                <Route
-                    path="blogs/single-blog"
-                    element={<SingleBlog />}
-                ></Route>
-                <Route
-                    path="about-us/our-company"
-                    element={<OurCompanyPage />}
-                ></Route>
-                <Route path="/careers" element={<HomePageML />}></Route>
-            </Routes>
-            </>
-        );
-    }
+          <Route path="contact-us" element={<ContactUsPage />}></Route>
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/view-job-post" element={<ViewJobPost />} />
+          <Route path="about-us/our-team" element={<OurTeamPage />}></Route>
+          <Route path="blogs" element={<AllBlogs />}></Route>
+          <Route path="blogs/single-blog" element={<SingleBlog />}></Route>
+          <Route
+            path="about-us/our-company"
+            element={<OurCompanyPage />}
+          ></Route>
+          <Route path="/careers" element={<HomePageML />}></Route>
+          <Route path="/community" element={<Community />}></Route>
+        </Routes>
+      </>
+    );
+  }
 }
 
 export default App;
